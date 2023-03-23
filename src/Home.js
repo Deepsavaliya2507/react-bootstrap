@@ -1,4 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import SearchIcon from '@mui/icons-material/Search';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import EmailIcon from '@mui/icons-material/Email';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import DownloadIcon from '@mui/icons-material/Download';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import SettingsIcon from '@mui/icons-material/Settings';
+import BuildIcon from '@mui/icons-material/Build';
+import FolderIcon from '@mui/icons-material/Folder';
+import AddchartIcon from '@mui/icons-material/Addchart';
+import BackupTableIcon from '@mui/icons-material/BackupTable';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import Data from './Chart.js';
 
 export default class Home extends Component {
     render() {
@@ -30,35 +46,19 @@ export default class Home extends Component {
                         </div>
                         {/* Nav Item - Pages Collapse Menu */}
                         <li className="nav-item">
-                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" 
-                            aria-expanded="true" aria-controls="collapseTwo">
-                                <i className="fas fa-fw fa-cog" />
+                            <a className="nav-link collapsed" href="Button" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="true" aria-controls="collapseTwo">
+                                <SettingsIcon />
                                 <span>Components</span>
                             </a>
-                            <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                                <div className="bg-white py-2 collapse-inner rounded">
-                                    <h6 className="collapse-header">Custom Components:</h6>
-                                    <a className="collapse-item" href="buttons.html">Buttons</a>
-                                    <a className="collapse-item" href="cards.html">Cards</a>
-                                </div>
-                            </div>
                         </li>
                         {/* Nav Item - Utilities Collapse Menu */}
                         <li className="nav-item">
-                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" 
-                            aria-expanded="true" aria-controls="collapseUtilities">
-                                <i className="fas fa-fw fa-wrench" />
+                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                                aria-expanded="true" aria-controls="collapseUtilities">
+                                <BuildIcon />
                                 <span>Utilities</span>
                             </a>
-                            <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                                <div className="bg-white py-2 collapse-inner rounded">
-                                    <h6 className="collapse-header">Custom Utilities:</h6>
-                                    <a className="collapse-item" href="utilities-color.html">Colors</a>
-                                    <a className="collapse-item" href="utilities-border.html">Borders</a>
-                                    <a className="collapse-item" href="utilities-animation.html">Animations</a>
-                                    <a className="collapse-item" href="utilities-other.html">Other</a>
-                                </div>
-                            </div>
                         </li>
                         {/* Divider */}
                         <hr className="sidebar-divider" />
@@ -68,45 +68,37 @@ export default class Home extends Component {
                         </div>
                         {/* Nav Item - Pages Collapse Menu */}
                         <li className="nav-item">
-                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" 
-                            aria-expanded="true" aria-controls="collapsePages">
-                                <i className="fas fa-fw fa-folder" />
+                            <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                                aria-expanded="true" aria-controls="collapsePages">
+                                <FolderIcon />
                                 <span>Pages</span>
                             </a>
-                            <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                                <div className="bg-white py-2 collapse-inner rounded">
-                                    <h6 className="collapse-header">Login Screens:</h6>
-                                    <a className="collapse-item" href="login.html">Login</a>
-                                    <a className="collapse-item" href="register.html">Register</a>
-                                    <a className="collapse-item" href="forgot-password.html">Forgot Password</a>
-                                    <div className="collapse-divider" />
-                                    <h6 className="collapse-header">Other Pages:</h6>
-                                    <a className="collapse-item" href="404.html">404 Page</a>
-                                    <a className="collapse-item" href="blank.html">Blank Page</a>
-                                </div>
-                            </div>
                         </li>
                         {/* Nav Item - Charts */}
                         <li className="nav-item">
                             <a className="nav-link" href="charts.html">
-                                <i className="fas fa-fw fa-chart-area" />
-                                <span>Charts</span></a>
+                                <AddchartIcon />
+                                <span>Charts</span>
+                            </a>
                         </li>
                         {/* Nav Item - Tables */}
                         <li className="nav-item">
                             <a className="nav-link" href="tables.html">
-                                <i className="fas fa-fw fa-table" />
-                                <span>Tables</span></a>
+                                <BackupTableIcon />
+                                <span>Tables</span>
+                            </a>
                         </li>
                         {/* Divider */}
                         <hr className="sidebar-divider d-none d-md-block" />
                         {/* Sidebar Toggler (Sidebar) */}
                         <div className="text-center d-none d-md-inline">
-                            <button className="rounded-circle border-0" id="sidebarToggle" />
+                            <button className="rounded-circle border-0" id="sidebarToggle" >
+                            <KeyboardArrowLeftIcon className='text-' />
+                            </button>
                         </div>
                         {/* Sidebar Message */}
                         <div className="sidebar-card d-none d-lg-flex">
-                            <img className="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="..." />
+                            <img className="sidebar-card-illustration mb-2" src="assets/img/undraw_rocket.svg" alt="..." />
                             <p className="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                             <a className="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
                         </div>
@@ -125,11 +117,11 @@ export default class Home extends Component {
                                 {/* Topbar Search */}
                                 <form className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                     <div className="input-group">
-                                        <input type="text" className="form-control bg-light border-0 small" placeholder="Search for..." 
-                                        aria-label="Search" aria-describedby="basic-addon2" />
+                                        <input type="text" className="form-control bg-light border-0 small" placeholder="Search for..."
+                                            aria-label="Search" aria-describedby="basic-addon2" />
                                         <div className="input-group-append">
                                             <button className="btn btn-primary" type="button">
-                                                <i className="fas fa-search fa-sm" />
+                                                <SearchIcon />
                                             </button>
                                         </div>
                                     </div>
@@ -138,16 +130,15 @@ export default class Home extends Component {
                                 <ul className="navbar-nav ml-auto">
                                     {/* Nav Item - Search Dropdown (Visible Only XS) */}
                                     <li className="nav-item dropdown no-arrow d-sm-none">
-                                        <a className="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" 
-                                        aria-haspopup="true" aria-expanded="false">
-                                            <i className="fas fa-search fa-fw" />
+                                        <a className="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
                                         </a>
                                         {/* Dropdown - Messages */}
                                         <div className="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                             <form className="form-inline mr-auto w-100 navbar-search">
                                                 <div className="input-group">
-                                                    <input type="text" className="form-control bg-light border-0 small" placeholder="Search for..." 
-                                                    aria-label="Search" aria-describedby="basic-addon2" />
+                                                    <input type="text" className="form-control bg-light border-0 small" placeholder="Search for..."
+                                                        aria-label="Search" aria-describedby="basic-addon2" />
                                                     <div className="input-group-append">
                                                         <button className="btn btn-primary" type="button">
                                                             <i className="fas fa-search fa-sm" />
@@ -159,15 +150,15 @@ export default class Home extends Component {
                                     </li>
                                     {/* Nav Item - Alerts */}
                                     <li className="nav-item dropdown no-arrow mx-1">
-                                        <a className="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" 
-                                        aria-haspopup="true" aria-expanded="false">
-                                            <i className="fas fa-bell fa-fw" />
+                                        <a className="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <NotificationsIcon />
                                             {/* Counter - Alerts */}
                                             <span className="badge badge-danger badge-counter">3+</span>
                                         </a>
                                         {/* Dropdown - Alerts */}
-                                        <div className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" 
-                                        aria-labelledby="alertsDropdown">
+                                        <div className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                            aria-labelledby="alertsDropdown">
                                             <h6 className="dropdown-header">
                                                 Alerts Center
                                             </h6>
@@ -209,9 +200,9 @@ export default class Home extends Component {
                                     </li>
                                     {/* Nav Item - Messages */}
                                     <li className="nav-item dropdown no-arrow mx-1">
-                                        <a className="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" 
-                                        aria-haspopup="true" aria-expanded="false">
-                                            <i className="fas fa-envelope fa-fw" />
+                                        <a className="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <EmailIcon />
                                             {/* Counter - Messages */}
                                             <span className="badge badge-danger badge-counter">7</span>
                                         </a>
@@ -222,7 +213,7 @@ export default class Home extends Component {
                                             </h6>
                                             <a className="dropdown-item d-flex align-items-center" href="#">
                                                 <div className="dropdown-list-image mr-3">
-                                                    <img className="rounded-circle" src="img/undraw_profile_1.svg" alt="..." />
+                                                    <img className="rounded-circle" src="assets/img/undraw_profile_1.svg" alt="..." />
                                                     <div className="status-indicator bg-success" />
                                                 </div>
                                                 <div className="font-weight-bold">
@@ -233,7 +224,7 @@ export default class Home extends Component {
                                             </a>
                                             <a className="dropdown-item d-flex align-items-center" href="#">
                                                 <div className="dropdown-list-image mr-3">
-                                                    <img className="rounded-circle" src="img/undraw_profile_2.svg" alt="..." />
+                                                    <img className="rounded-circle" src="assets/img/undraw_profile_2.svg" alt="..." />
                                                     <div className="status-indicator" />
                                                 </div>
                                                 <div>
@@ -244,7 +235,7 @@ export default class Home extends Component {
                                             </a>
                                             <a className="dropdown-item d-flex align-items-center" href="#">
                                                 <div className="dropdown-list-image mr-3">
-                                                    <img className="rounded-circle" src="img/undraw_profile_3.svg" alt="..." />
+                                                    <img className="rounded-circle" src="assets/img/undraw_profile_3.svg" alt="..." />
                                                     <div className="status-indicator bg-warning" />
                                                 </div>
                                                 <div>
@@ -270,10 +261,10 @@ export default class Home extends Component {
                                     <div className="topbar-divider d-none d-sm-block" />
                                     {/* Nav Item - User Information */}
                                     <li className="nav-item dropdown no-arrow">
-                                        <a className="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" 
-                                        aria-haspopup="true" aria-expanded="false">
+                                        <a className="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
                                             <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                            <img className="img-profile rounded-circle" src="img/undraw_profile.svg" />
+                                            <img className="img-profile rounded-circle" src="assets/img/undraw_profile.svg" />
                                         </a>
                                         {/* Dropdown - User Information */}
                                         <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -305,7 +296,7 @@ export default class Home extends Component {
                                 <div className="d-sm-flex align-items-center justify-content-between mb-4">
                                     <h1 className="h3 mb-0 text-gray-800">Dashboard</h1>
                                     <a href="#" className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                                    <i className="fas fa-download fa-sm text-white-50" /> Generate Report</a>
+                                        <DownloadIcon className='text-gray-300' /> Generate Report</a>
                                 </div>
                                 {/* Content Row */}
                                 <div className="row">
@@ -320,7 +311,7 @@ export default class Home extends Component {
                                                         <div className="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                                                     </div>
                                                     <div className="col-auto">
-                                                        <i className="fas fa-calendar fa-2x text-gray-300" />
+                                                        <CalendarMonthIcon className='text-gray-300' />
                                                     </div>
                                                 </div>
                                             </div>
@@ -337,7 +328,7 @@ export default class Home extends Component {
                                                         <div className="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
                                                     </div>
                                                     <div className="col-auto">
-                                                        <i className="fas fa-dollar-sign fa-2x text-gray-300" />
+                                                        <AttachMoneyIcon className='text-gray-300' />
                                                     </div>
                                                 </div>
                                             </div>
@@ -353,18 +344,18 @@ export default class Home extends Component {
                                                         </div>
                                                         <div className="row no-gutters align-items-center">
                                                             <div className="col-auto">
-                                                                <div className="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                                <div className="h5 mb-0 mr-3 font-weight-bold text-gray-800"> 50%</div>
                                                             </div>
                                                             <div className="col">
                                                                 <div className="progress progress-sm mr-2">
-                                                                    <div className="progress-bar bg-info" role="progressbar" style={{ width: '50%' }} 
-                                                                    aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} />
+                                                                    <div className="progress-bar bg-info" role="progressbar" style={{ width: '50%' }}
+                                                                        aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} />
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-auto">
-                                                        <i className="fas fa-clipboard-list fa-2x text-gray-300" />
+                                                        <AssignmentIcon className='text-gray-300' />
                                                     </div>
                                                 </div>
                                             </div>
@@ -381,7 +372,7 @@ export default class Home extends Component {
                                                         <div className="h5 mb-0 font-weight-bold text-gray-800">18</div>
                                                     </div>
                                                     <div className="col-auto">
-                                                        <i className="fas fa-comments fa-2x text-gray-300" />
+                                                        <QuestionAnswerIcon className='text-gray-300' />
                                                     </div>
                                                 </div>
                                             </div>
@@ -397,8 +388,8 @@ export default class Home extends Component {
                                             <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                                 <h6 className="m-0 font-weight-bold text-primary">Earnings Overview</h6>
                                                 <div className="dropdown no-arrow">
-                                                    <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" 
-                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
                                                         <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400" />
                                                     </a>
                                                     <div className="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
@@ -425,8 +416,8 @@ export default class Home extends Component {
                                             <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                                 <h6 className="m-0 font-weight-bold text-primary">Revenue Sources</h6>
                                                 <div className="dropdown no-arrow">
-                                                    <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" 
-                                                    aria-haspopup="true" aria-expanded="false">
+                                                    <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
                                                         <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400" />
                                                     </a>
                                                     <div className="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
@@ -441,7 +432,8 @@ export default class Home extends Component {
                                             {/* Card Body */}
                                             <div className="card-body">
                                                 <div className="chart-pie pt-4 pb-2">
-                                                    <canvas id="myPieChart" />
+                                                    {/* <canvas id="myPieChart" /> */}
+                                                    <Data />
                                                 </div>
                                                 <div className="mt-4 text-center small">
                                                     <span className="mr-2">
@@ -470,28 +462,28 @@ export default class Home extends Component {
                                             <div className="card-body">
                                                 <h4 className="small font-weight-bold">Server Migration <span className="float-right">20%</span></h4>
                                                 <div className="progress mb-4">
-                                                    <div className="progress-bar bg-danger" role="progressbar" style={{ width: '20%' }} aria-valuenow={20} 
-                                                    aria-valuemin={0} aria-valuemax={100} />
+                                                    <div className="progress-bar bg-danger" role="progressbar" style={{ width: '20%' }} aria-valuenow={20}
+                                                        aria-valuemin={0} aria-valuemax={100} />
                                                 </div>
                                                 <h4 className="small font-weight-bold">Sales Tracking <span className="float-right">40%</span></h4>
                                                 <div className="progress mb-4">
-                                                    <div className="progress-bar bg-warning" role="progressbar" style={{ width: '40%' }} aria-valuenow={40} 
-                                                    aria-valuemin={0} aria-valuemax={100} />
+                                                    <div className="progress-bar bg-warning" role="progressbar" style={{ width: '40%' }} aria-valuenow={40}
+                                                        aria-valuemin={0} aria-valuemax={100} />
                                                 </div>
                                                 <h4 className="small font-weight-bold">Customer Database <span className="float-right">60%</span></h4>
                                                 <div className="progress mb-4">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '60%' }} aria-valuenow={60} 
-                                                    aria-valuemin={0} aria-valuemax={100} />
+                                                    <div className="progress-bar" role="progressbar" style={{ width: '60%' }} aria-valuenow={60}
+                                                        aria-valuemin={0} aria-valuemax={100} />
                                                 </div>
                                                 <h4 className="small font-weight-bold">Payout Details <span className="float-right">80%</span></h4>
                                                 <div className="progress mb-4">
-                                                    <div className="progress-bar bg-info" role="progressbar" style={{ width: '80%' }} aria-valuenow={80} 
-                                                    aria-valuemin={0} aria-valuemax={100} />
+                                                    <div className="progress-bar bg-info" role="progressbar" style={{ width: '80%' }} aria-valuenow={80}
+                                                        aria-valuemin={0} aria-valuemax={100} />
                                                 </div>
                                                 <h4 className="small font-weight-bold">Account Setup <span className="float-right">Complete!</span></h4>
                                                 <div className="progress">
-                                                    <div className="progress-bar bg-success" role="progressbar" style={{ width: '100%' }} aria-valuenow={100} 
-                                                    aria-valuemin={0} aria-valuemax={100} />
+                                                    <div className="progress-bar bg-success" role="progressbar" style={{ width: '100%' }} aria-valuenow={100}
+                                                        aria-valuemin={0} aria-valuemax={100} />
                                                 </div>
                                             </div>
                                         </div>
@@ -571,11 +563,11 @@ export default class Home extends Component {
                                             </div>
                                             <div className="card-body">
                                                 <div className="text-center">
-                                                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: '25rem' }} src="img/undraw_posting_photo.svg" 
-                                                    alt="..." />
+                                                    <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: '25rem' }} src="assets/img/undraw_posting_photo.svg"
+                                                        alt="..." />
                                                 </div>
                                                 <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank"
-                                                rel="nofollow" href="https://undraw.co/">unDraw</a>, a
+                                                    rel="nofollow" href="https://undraw.co/">unDraw</a>, a
                                                     constantly updated collection of beautiful svg images that you can use
                                                     completely free and without attribution!</p>
                                                 <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
